@@ -18,5 +18,6 @@ void sendIMUReadings(float ax, float ay, float az, float gx, float gy, float gz,
 void sendOrientation(float roll, float pitch, float yaw);
 void throttleCb(const std_msgs::Int32MultiArray& pwm_msg);
 void calibrationCb(const std_msgs::Bool& calibration_status);
+void ledCb(const std_msgs::Int16& led_msg);
 void checkForCommands();
 #endif  // COMMUNICATION_INTERFACE_HPP
