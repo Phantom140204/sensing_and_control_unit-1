@@ -72,14 +72,14 @@ void updateOffset(MPU6050 gyro) {
   gyroscopeOffset.array[1] /= NO_OF_SAMPLES;
   gyroscopeOffset.array[2] /= NO_OF_SAMPLES;
   accelerometerOffset.array[2] -= 1;
-  Serial.println("accelerometerOffset: ");
-  Serial.println(accelerometerOffset.array[0]);
-  Serial.println(accelerometerOffset.array[1]);
-  Serial.println(accelerometerOffset.array[2]);
-  Serial.println("gyroscopeOffset: ");
-  Serial.println(gyroscopeOffset.array[0]);
-  Serial.println(gyroscopeOffset.array[1]);
-  Serial.println(gyroscopeOffset.array[2]);
+  // Serial.println("accelerometerOffset: ");
+  // Serial.println(accelerometerOffset.array[0]);
+  // Serial.println(accelerometerOffset.array[1]);
+  // Serial.println(accelerometerOffset.array[2]);
+  // Serial.println("gyroscopeOffset: ");
+  // Serial.println(gyroscopeOffset.array[0]);
+  // Serial.println(gyroscopeOffset.array[1]);
+  // Serial.println(gyroscopeOffset.array[2]);
 }
 void applyIMUCalibration(float &ax, float &ay, float &az, float &gx, float &gy,
                          float &gz, float &mx, float &my, float &mz) {
